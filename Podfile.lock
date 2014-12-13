@@ -1,0 +1,13 @@
+PODS:
+  - Firebase (2.0.2)
+  - RNBlurModalView (0.1.0)
+
+DEPENDENCIES:
+  - Firebase (>= 2.0.2)
+  - RNBlurModalView (~> 0.1.0)
+
+SPEC CHECKSUMS:
+  Firebase: 793a4581e4f4d9cb1e156cab89ca367f3d02b473
+  RNBlurModalView: 38380c10dcaf7804f7ba5e3516abcaf8bc8eddb3
+
+COCOAPODS: 0.34.4
