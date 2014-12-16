@@ -14,6 +14,12 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [self setupApp:application];
+    
+    self.notifcationCenterArray = [[NSMutableArray alloc] init];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveTestNotification:)
+                                                 name:@"sendArrayToAppDel"
+                                               object:nil];
     return YES;
 }
 
@@ -30,14 +36,27 @@
     if ([[userInfo objectForKey:@"request"] isEqualToString:@"Hello"]) {
         
         NSLog(@"containing app received message from watch");
-        
-        NSDictionary *response = @{@"response" : @"Watchkit"};
+        //NSArray *testArray = @[@"Yo dude what up?", @"Nothing, You rock!!!"];
+        NSDictionary *response = @{@"response" : self.notifcationCenterArray};
         reply(response);
     }
     
 }
 
-
+-(void) receiveTestNotification:(NSNotification*)notification
+{
+    if ([notification.name isEqualToString:@"sendArrayToAppDel"])
+    {
+        NSDictionary* userInfo = notification.userInfo;
+        NSArray * response = (NSArray*)userInfo[@"total"];
+        NSLog (@"Successfully received test notification! %@", response);
+        if (![response count]==0) {
+            NSDictionary *messageDictionary=response[0];
+            [self.notifcationCenterArray addObject:messageDictionary];
+            
+        }
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
