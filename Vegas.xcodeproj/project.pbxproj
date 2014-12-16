@@ -55,6 +55,13 @@
 		B19C3A341A1FE748002868B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B19C3A331A1FE748002868B1 /* main.m */; };
 		B19C3A371A1FE79E002868B1 /* KJDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19C3A361A1FE79E002868B1 /* KJDLoginViewController.m */; };
 		BD71407CCB2854C8BCF55FE3 /* libPods-Vegas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E89D24A220E31E9A949BD9 /* libPods-Vegas.a */; };
+		D4CC89AF1A40B7E500CCCC75 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC89AE1A40B7E500CCCC75 /* InterfaceController.m */; };
+		D4CC89B11A40B7E500CCCC75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CC89B01A40B7E500CCCC75 /* Images.xcassets */; };
+		D4CC89B51A40B7E500CCCC75 /* Vegas WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = D4CC89B41A40B7E500CCCC75 /* Vegas WatchKit App.app */; };
+		D4CC89BC1A40B7E500CCCC75 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CC89BB1A40B7E500CCCC75 /* Interface.storyboard */; };
+		D4CC89BE1A40B7E500CCCC75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CC89BD1A40B7E500CCCC75 /* Images.xcassets */; };
+		D4CC89C11A40B7E500CCCC75 /* Vegas WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D4CC89A91A40B7E500CCCC75 /* Vegas WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D4CC89CB1A40B9D300CCCC75 /* MainRowType.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC89CA1A40B9D300CCCC75 /* MainRowType.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +72,35 @@
 			remoteGlobalIDString = 0BB036AE1A1FE0EE0021CCF4;
 			remoteInfo = Vegas;
 		};
+		D4CC89B61A40B7E500CCCC75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BB036A71A1FE0EE0021CCF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4CC89B31A40B7E500CCCC75;
+			remoteInfo = "Vegas WatchKit App";
+		};
+		D4CC89BF1A40B7E500CCCC75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BB036A71A1FE0EE0021CCF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4CC89A81A40B7E500CCCC75;
+			remoteInfo = "Vegas WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4CC89C81A40B7E500CCCC75 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4CC89C11A40B7E500CCCC75 /* Vegas WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B24301B1A2696AC007E60C1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -137,6 +172,17 @@
 		B19C3A351A1FE79E002868B1 /* KJDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDLoginViewController.h; sourceTree = "<group>"; };
 		B19C3A361A1FE79E002868B1 /* KJDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDLoginViewController.m; sourceTree = "<group>"; };
 		CB5DAB915AC2BF4B352376B8 /* Pods-Vegas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas/Pods-Vegas.debug.xcconfig"; sourceTree = "<group>"; };
+		D4CC89A91A40B7E500CCCC75 /* Vegas WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Vegas WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CC89AC1A40B7E500CCCC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CC89AD1A40B7E500CCCC75 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		D4CC89AE1A40B7E500CCCC75 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		D4CC89B01A40B7E500CCCC75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4CC89B41A40B7E500CCCC75 /* Vegas WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vegas WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CC89BA1A40B7E500CCCC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CC89BB1A40B7E500CCCC75 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		D4CC89BD1A40B7E500CCCC75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4CC89C91A40B9D300CCCC75 /* MainRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRowType.h; sourceTree = "<group>"; };
+		D4CC89CA1A40B9D300CCCC75 /* MainRowType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRowType.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +209,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0BB036C51A1FE0EE0021CCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CC89A61A40B7E500CCCC75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,6 +254,8 @@
 			children = (
 				0BB036B11A1FE0EE0021CCF4 /* Vegas */,
 				0BB036CB1A1FE0EE0021CCF4 /* VegasTests */,
+				D4CC89AA1A40B7E500CCCC75 /* Vegas WatchKit Extension */,
+				D4CC89B81A40B7E500CCCC75 /* Vegas WatchKit App */,
 				0BB036B01A1FE0EE0021CCF4 /* Products */,
 				3F27823C449794DFCEFFACF7 /* Pods */,
 				C7D98B8274A492CDF715EF39 /* Frameworks */,
@@ -212,6 +267,8 @@
 			children = (
 				0BB036AF1A1FE0EE0021CCF4 /* Vegas.app */,
 				0BB036C81A1FE0EE0021CCF4 /* VegasTests.xctest */,
+				D4CC89A91A40B7E500CCCC75 /* Vegas WatchKit Extension.appex */,
+				D4CC89B41A40B7E500CCCC75 /* Vegas WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -359,6 +416,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D4CC89AA1A40B7E500CCCC75 /* Vegas WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC89AD1A40B7E500CCCC75 /* InterfaceController.h */,
+				D4CC89AE1A40B7E500CCCC75 /* InterfaceController.m */,
+				D4CC89B01A40B7E500CCCC75 /* Images.xcassets */,
+				D4CC89AB1A40B7E500CCCC75 /* Supporting Files */,
+				D4CC89C91A40B9D300CCCC75 /* MainRowType.h */,
+				D4CC89CA1A40B9D300CCCC75 /* MainRowType.m */,
+			);
+			path = "Vegas WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D4CC89AB1A40B7E500CCCC75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC89AC1A40B7E500CCCC75 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4CC89B81A40B7E500CCCC75 /* Vegas WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC89BB1A40B7E500CCCC75 /* Interface.storyboard */,
+				D4CC89BD1A40B7E500CCCC75 /* Images.xcassets */,
+				D4CC89B91A40B7E500CCCC75 /* Supporting Files */,
+			);
+			path = "Vegas WatchKit App";
+			sourceTree = "<group>";
+		};
+		D4CC89B91A40B7E500CCCC75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC89BA1A40B7E500CCCC75 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -371,10 +467,12 @@
 				0BB036AC1A1FE0EE0021CCF4 /* Frameworks */,
 				0BB036AD1A1FE0EE0021CCF4 /* Resources */,
 				70653407E937DEDE0ABD9369 /* Copy Pods Resources */,
+				D4CC89C81A40B7E500CCCC75 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D4CC89C01A40B7E500CCCC75 /* PBXTargetDependency */,
 			);
 			name = Vegas;
 			productName = Vegas;
@@ -399,6 +497,39 @@
 			productReference = 0BB036C81A1FE0EE0021CCF4 /* VegasTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D4CC89A81A40B7E500CCCC75 /* Vegas WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CC89C71A40B7E500CCCC75 /* Build configuration list for PBXNativeTarget "Vegas WatchKit Extension" */;
+			buildPhases = (
+				D4CC89A51A40B7E500CCCC75 /* Sources */,
+				D4CC89A61A40B7E500CCCC75 /* Frameworks */,
+				D4CC89A71A40B7E500CCCC75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4CC89B71A40B7E500CCCC75 /* PBXTargetDependency */,
+			);
+			name = "Vegas WatchKit Extension";
+			productName = "Vegas WatchKit Extension";
+			productReference = D4CC89A91A40B7E500CCCC75 /* Vegas WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		D4CC89B31A40B7E500CCCC75 /* Vegas WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CC89C61A40B7E500CCCC75 /* Build configuration list for PBXNativeTarget "Vegas WatchKit App" */;
+			buildPhases = (
+				D4CC89B21A40B7E500CCCC75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vegas WatchKit App";
+			productName = "Vegas WatchKit App";
+			productReference = D4CC89B41A40B7E500CCCC75 /* Vegas WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -414,6 +545,12 @@
 					0BB036C71A1FE0EE0021CCF4 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 0BB036AE1A1FE0EE0021CCF4;
+					};
+					D4CC89A81A40B7E500CCCC75 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					D4CC89B31A40B7E500CCCC75 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -432,6 +569,8 @@
 			targets = (
 				0BB036AE1A1FE0EE0021CCF4 /* Vegas */,
 				0BB036C71A1FE0EE0021CCF4 /* VegasTests */,
+				D4CC89A81A40B7E500CCCC75 /* Vegas WatchKit Extension */,
+				D4CC89B31A40B7E500CCCC75 /* Vegas WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -462,6 +601,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CC89A71A40B7E500CCCC75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CC89B11A40B7E500CCCC75 /* Images.xcassets in Resources */,
+				D4CC89B51A40B7E500CCCC75 /* Vegas WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CC89B21A40B7E500CCCC75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CC89BC1A40B7E500CCCC75 /* Interface.storyboard in Resources */,
+				D4CC89BE1A40B7E500CCCC75 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +691,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4CC89A51A40B7E500CCCC75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CC89AF1A40B7E500CCCC75 /* InterfaceController.m in Sources */,
+				D4CC89CB1A40B9D300CCCC75 /* MainRowType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -541,6 +707,16 @@
 			isa = PBXTargetDependency;
 			target = 0BB036AE1A1FE0EE0021CCF4 /* Vegas */;
 			targetProxy = 0BB036C91A1FE0EE0021CCF4 /* PBXContainerItemProxy */;
+		};
+		D4CC89B71A40B7E500CCCC75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4CC89B31A40B7E500CCCC75 /* Vegas WatchKit App */;
+			targetProxy = D4CC89B61A40B7E500CCCC75 /* PBXContainerItemProxy */;
+		};
+		D4CC89C01A40B7E500CCCC75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4CC89A81A40B7E500CCCC75 /* Vegas WatchKit Extension */;
+			targetProxy = D4CC89BF1A40B7E500CCCC75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -689,6 +865,66 @@
 			};
 			name = Release;
 		};
+		D4CC89C21A40B7E500CCCC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Vegas WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D4CC89C31A40B7E500CCCC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Vegas WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D4CC89C41A40B7E500CCCC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Vegas_WatchKit_Extension;
+				INFOPLIST_FILE = "Vegas WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		D4CC89C51A40B7E500CCCC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = Vegas_WatchKit_Extension;
+				INFOPLIST_FILE = "Vegas WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -718,6 +954,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D4CC89C61A40B7E500CCCC75 /* Build configuration list for PBXNativeTarget "Vegas WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CC89C41A40B7E500CCCC75 /* Debug */,
+				D4CC89C51A40B7E500CCCC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4CC89C71A40B7E500CCCC75 /* Build configuration list for PBXNativeTarget "Vegas WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CC89C21A40B7E500CCCC75 /* Debug */,
+				D4CC89C31A40B7E500CCCC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

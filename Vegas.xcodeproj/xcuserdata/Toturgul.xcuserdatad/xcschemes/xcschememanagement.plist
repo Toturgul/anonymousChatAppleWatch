@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Vegas WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Vegas.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>0BB036C71A1FE0EE0021CCF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4CC89B31A40B7E500CCCC75</key>
 		<dict>
 			<key>primary</key>
 			<true/>

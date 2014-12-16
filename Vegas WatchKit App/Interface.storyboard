@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="13F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Button" id="89c-6z-NwI">
+                            <connections>
+                                <action selector="myButton" destination="AgC-eL-Hgc" id="NbD-3L-Mhs"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" layout="vertical" id="dNO-2E-MQA">
+                            <items>
+                                <tableRow identifier="firstRC" id="5hH-ec-byr" customClass="MainRowType">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="m76-iZ-0vb">
+                                        <items>
+                                            <label width="105" alignment="left" text="Username" id="ehw-eR-Edc"/>
+                                            <label width="126" alignment="left" text="Message" numberOfLines="3" id="v10-Iz-EEa"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="messageLabel" destination="v10-Iz-EEa" id="sRp-xM-y4x"/>
+                                        <outlet property="usernameLabel" destination="ehw-eR-Edc" id="Ezu-mv-S5j"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="dNO-2E-MQA" id="Lgp-4M-B6s"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
