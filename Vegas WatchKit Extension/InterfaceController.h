@@ -10,5 +10,7 @@
 #import <Foundation/Foundation.h>
 
 @interface InterfaceController : WKInterfaceController
+@property (strong, nonatomic) NSMutableArray *infoFromAppDel;
+
 
 @end

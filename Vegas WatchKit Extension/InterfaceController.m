@@ -7,7 +7,7 @@
 //
 
 #import "InterfaceController.h"
-
+#import "MainRowType.h"
 
 @interface InterfaceController()
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *myTable;
@@ -61,13 +61,33 @@
         } else {
             
             //         [self.label setText:[replyInfo objectForKey:@"response"]];
-            NSLog(@"*********** %@",[replyInfo objectForKey:@"response"]);
+          //  NSLog(@"*********** %@",[replyInfo objectForKey:@"response"]);
+            self.infoFromAppDel = [[NSMutableArray alloc] init];
+            self.infoFromAppDel = [replyInfo objectForKey:@"response"];
+            [self configureTableWithData:self.infoFromAppDel];
         }
         
     }];
     
+}
+
+- (void)configureTableWithData:(NSArray*)dataObjects {
+    
+    NSLog(@"configureTablewithData activated num of rows %ld",[dataObjects count]);
+    
+    [self.myTable setNumberOfRows:[dataObjects count] withRowType:@"firstRC"];
+    for (NSInteger i = 0; i < self.myTable.numberOfRows; i++) {
+        MainRowType* theRow = [self.myTable rowControllerAtIndex:i];
+        NSDictionary* dataObj = [dataObjects objectAtIndex:i];
+        
+        [theRow.usernameLabel setText:dataObj[@"user"]];
+        [theRow.messageLabel setText:dataObj[@"message"]];
+    }
+    
     
 }
+
+
 @end
 
 
