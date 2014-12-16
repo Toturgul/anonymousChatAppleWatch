@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *myTable;
 - (IBAction)myButton;
 
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *buttonImage;
+
 
 @end
 
@@ -29,6 +31,7 @@
         
         
     }
+//    [self.buttonImage setBackgroundImage:[UIImage imageNamed: @"vegasAppIcon.png"]];
     return self;
 }
 
@@ -111,8 +114,9 @@
 //            [theRow.messageLabel setTextColor:[UIColor blueColor]];
 //        }
         if (i==0) {
-            [theRow.messageLabel setTextColor:[UIColor redColor]];
-            [theRow.usernameLabel setTextColor:[UIColor redColor]];
+            [theRow.messageLabel setTextColor:[UIColor greenColor]];
+            [theRow.usernameLabel setTextColor:[UIColor whiteColor]];
+        
         }
         
         if (dataObj[@"video"])
@@ -136,6 +140,7 @@
     
     
 }
+
 
 
 @end

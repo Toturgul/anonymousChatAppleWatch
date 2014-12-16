@@ -962,6 +962,7 @@
 				D4CC89C51A40B7E500CCCC75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4CC89C71A40B7E500CCCC75 /* Build configuration list for PBXNativeTarget "Vegas WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -970,6 +971,7 @@
 				D4CC89C31A40B7E500CCCC75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

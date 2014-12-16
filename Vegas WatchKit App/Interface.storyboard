@@ -10,9 +10,9 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="89c-6z-NwI">
+                        <button width="1" height="68" alignment="left" backgroundImage="las-vegas-308001_1280.png" id="gcE-OB-BbT">
                             <connections>
-                                <action selector="myButton" destination="AgC-eL-Hgc" id="NbD-3L-Mhs"/>
+                                <action selector="myButton" destination="AgC-eL-Hgc" id="qKl-ox-TU8"/>
                             </connections>
                         </button>
                         <table alignment="left" layout="vertical" id="dNO-2E-MQA">
@@ -20,7 +20,9 @@
                                 <tableRow identifier="firstRC" id="5hH-ec-byr" customClass="MainRowType">
                                     <group key="rootItem" width="1" alignment="left" layout="vertical" id="m76-iZ-0vb">
                                         <items>
-                                            <label width="105" alignment="left" text="Username" id="ehw-eR-Edc"/>
+                                            <label width="105" alignment="left" text="Username" id="ehw-eR-Edc">
+                                                <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                                            </label>
                                             <label width="126" alignment="left" text="Message" numberOfLines="3" id="v10-Iz-EEa"/>
                                         </items>
                                     </group>
@@ -37,6 +39,7 @@
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="139" y="143"/>
         </scene>
     </scenes>
 </document>
