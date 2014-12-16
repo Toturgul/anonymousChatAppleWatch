@@ -412,7 +412,7 @@
     NSString *tempPath = [documentsDirectory stringByAppendingFormat:@"/vid1.mp4"];
     
     BOOL success = [videoData writeToFile:tempPath atomically:NO];
-    NSLog(@"write to file success: %d", success);
+//    NSLog(@"write to file success: %d", success);
     
     NSURL* pathURL = [[NSURL alloc] initFileURLWithPath:tempPath];
     
@@ -645,23 +645,23 @@
                 rightCell.backgroundColor=[UIColor clearColor];
                 [rightCell.mediaImageView setBackgroundColor:[UIColor clearColor]];
                 
-                NSLog(@"cell content view subviws BEFORE: %@", rightCell.contentView.subviews);
+//                NSLog(@"cell content view subviws BEFORE: %@", rightCell.contentView.subviews);
                 [rightCell.mediaImageView removeFromSuperview];
-                                NSLog(@"cell content view subviws AFTER: %@", rightCell.contentView.subviews);
+//                                NSLog(@"cell content view subviws AFTER: %@", rightCell.contentView.subviews);
                 
                 player.view .frame = CGRectMake(170, 30, 141, 142);
                 if ([rightCell.contentView.subviews count] == 1)
                 {
                     [rightCell.contentView addSubview:player.view];
                 }
-                                NSLog(@"cell content view subviws LAST: %@", rightCell.contentView.subviews);
+//                                NSLog(@"cell content view subviws LAST: %@", rightCell.contentView.subviews);
                 
                 return rightCell;
             }else{
                 KJDChatRoomImageCellLeft *leftCell=[tableView dequeueReusableCellWithIdentifier:@"imageCellLeft"];
                 NSMutableAttributedString *muAtrStr = [[NSMutableAttributedString alloc]initWithString:content[@"user"]];
                 [muAtrStr addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-MediumItalic" size:15] range:NSMakeRange(0, [muAtrStr length])];
-                NSLog(@"cell content view subviws BEFORE: %@", leftCell.contentView.subviews);
+//                NSLog(@"cell content view subviws BEFORE: %@", leftCell.contentView.subviews);
                 leftCell.usernameLabel.attributedText=muAtrStr;
                 leftCell.backgroundColor=[UIColor clearColor];
                 [leftCell.mediaImageView setBackgroundColor:[UIColor clearColor]];

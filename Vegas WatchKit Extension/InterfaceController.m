@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *myTable;
 - (IBAction)myButton;
 
+
 @end
 
 
@@ -37,19 +38,30 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 
+    
+    
     // Configure interface objects here.
     NSLog(@"%@ awakeWithContext", self);
 }
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(myButton)
+                                                     name:@"dataToWatch"
+                                                   object:nil];
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(myButton) userInfo:nil repeats:YES];
+    
     NSLog(@"%@ will activate", self);
 }
+
 
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     NSLog(@"%@ did deactivate", self);
 }
+
 
 - (IBAction)myButton {
     NSDictionary *requst = @{@"request":@"Hello"};
@@ -64,12 +76,19 @@
           //  NSLog(@"*********** %@",[replyInfo objectForKey:@"response"]);
             self.infoFromAppDel = [[NSMutableArray alloc] init];
             NSArray *tempArray = [replyInfo objectForKey:@"response"];
+            
+//            if (! self.userName) {
+//                self.userName = replyInfo[@"userName"];
+//            }
             for (NSDictionary *tempDict in tempArray) {
                 [self.infoFromAppDel insertObject:tempDict atIndex:0];
             }
             
-            
+            if ([self.infoFromAppDel count] > [self.oldInfo count])
+            {
             [self configureTableWithData:self.infoFromAppDel];
+                self.oldInfo = self.infoFromAppDel;
+            }
         }
         
     }];
@@ -85,8 +104,34 @@
         MainRowType* theRow = [self.myTable rowControllerAtIndex:i];
         NSDictionary* dataObj = [dataObjects objectAtIndex:i];
         
+        
         [theRow.usernameLabel setText:dataObj[@"user"]];
-        [theRow.messageLabel setText:dataObj[@"message"]];
+//        if (dataObj[@"user"] != self.userName) {
+//            [theRow.usernameLabel setTextColor:[UIColor blueColor]];
+//            [theRow.messageLabel setTextColor:[UIColor blueColor]];
+//        }
+        if (i==0) {
+            [theRow.messageLabel setTextColor:[UIColor redColor]];
+            [theRow.usernameLabel setTextColor:[UIColor redColor]];
+        }
+        
+        if (dataObj[@"video"])
+        {
+            [theRow.messageLabel setText:@"[Video shared]"];
+        }
+        else if (dataObj[@"image"])
+        {
+            [theRow.messageLabel setText:@"[Image shared]"];
+        }
+        else if (dataObj[@"map"])
+        {
+            [theRow.messageLabel setText:@"[Map shared]"];
+        }
+        else
+        {
+            [theRow.messageLabel setText:dataObj[@"message"]];
+        }
+        
     }
     
     

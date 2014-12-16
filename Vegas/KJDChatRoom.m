@@ -56,6 +56,7 @@
             [self.messages addObjectsFromArray:messages];
          
          NSDictionary* userInfo = @{@"total": messages};
+//                                    @"userName": self.user.name};
          
          NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
          [nc postNotificationName:@"sendArrayToAppDel" object:self userInfo:userInfo];

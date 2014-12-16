@@ -11,6 +11,9 @@
 
 @interface InterfaceController : WKInterfaceController
 @property (strong, nonatomic) NSMutableArray *infoFromAppDel;
+@property (strong, nonatomic) NSMutableArray *oldInfo;
+@property (strong, nonatomic) NSString* userName;
 
 
+- (IBAction)myButton;
 @end

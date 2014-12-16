@@ -4,6 +4,7 @@
 
 #import "AppDelegate.h"
 #import "KJDLoginViewController.h"
+#import "InterfaceController.h"
 
 
 @implementation AppDelegate
@@ -38,7 +39,12 @@
         NSLog(@"containing app received message from watch");
         //NSArray *testArray = @[@"Yo dude what up?", @"Nothing, You rock!!!"];
         NSDictionary *response = @{@"response" : self.notifcationCenterArray};
+//                                   @"userName": self.userName};
         reply(response);
+        NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
+        
+        [nc postNotificationName:@"dataToWatch" object:self userInfo:userInfo];
+
     }
     
 }
@@ -49,6 +55,7 @@
     {
         NSDictionary* userInfo = notification.userInfo;
         NSArray * response = (NSArray*)userInfo[@"total"];
+//        self.userName = (NSString*) userInfo[@"userName"];
         NSLog (@"Successfully received test notification! %@", response);
         if (![response count]==0) {
             NSDictionary *messageDictionary=response[0];
