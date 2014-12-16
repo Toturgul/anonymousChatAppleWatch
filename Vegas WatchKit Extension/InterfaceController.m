@@ -52,6 +52,21 @@
 }
 
 - (IBAction)myButton {
+    NSDictionary *requst = @{@"request":@"Hello"};
+    
+    [InterfaceController openParentApplication:requst reply:^(NSDictionary *replyInfo, NSError *error) {
+        
+        if (error) {
+            NSLog(@"%@", error);
+        } else {
+            
+            //         [self.label setText:[replyInfo objectForKey:@"response"]];
+            NSLog(@"*********** %@",[replyInfo objectForKey:@"response"]);
+        }
+        
+    }];
+    
+    
 }
 @end
 
