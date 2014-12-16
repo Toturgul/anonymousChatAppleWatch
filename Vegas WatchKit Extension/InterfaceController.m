@@ -63,7 +63,12 @@
             //         [self.label setText:[replyInfo objectForKey:@"response"]];
           //  NSLog(@"*********** %@",[replyInfo objectForKey:@"response"]);
             self.infoFromAppDel = [[NSMutableArray alloc] init];
-            self.infoFromAppDel = [replyInfo objectForKey:@"response"];
+            NSArray *tempArray = [replyInfo objectForKey:@"response"];
+            for (NSDictionary *tempDict in tempArray) {
+                [self.infoFromAppDel insertObject:tempDict atIndex:0];
+            }
+            
+            
             [self configureTableWithData:self.infoFromAppDel];
         }
         
