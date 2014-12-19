@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B24301C1A2696AC007E60C1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B24301B1A2696AC007E60C1 /* MediaPlayer.framework */; };
+		0B24301F1A2696B7007E60C1 /* libMobileGestalt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B24301D1A2696B7007E60C1 /* libMobileGestalt.dylib */; };
+		0B2430201A2696B7007E60C1 /* libMobileGestaltExtensions.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B24301E1A2696B7007E60C1 /* libMobileGestaltExtensions.dylib */; };
+		0B24302B1A26971B007E60C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2430211A26971B007E60C1 /* AudioToolbox.framework */; };
+		0B24302C1A26971B007E60C1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2430221A26971B007E60C1 /* CFNetwork.framework */; };
+		0B24302D1A26971B007E60C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2430231A26971B007E60C1 /* CoreGraphics.framework */; };
+		0B24302E1A26971B007E60C1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2430241A26971B007E60C1 /* CoreLocation.framework */; };
+		0B24302F1A26971B007E60C1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2430251A26971B007E60C1 /* libz.dylib */; };
+		0B2430301A26971B007E60C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2430261A26971B007E60C1 /* MobileCoreServices.framework */; };
+		0B2430311A26971B007E60C1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2430271A26971B007E60C1 /* QuartzCore.framework */; };
+		0B2430321A26971B007E60C1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2430281A26971B007E60C1 /* Security.framework */; };
+		0B2430331A26971B007E60C1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2430291A26971B007E60C1 /* StoreKit.framework */; };
+		0B2430341A26971B007E60C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B24302A1A26971B007E60C1 /* SystemConfiguration.framework */; };
+		0B2430361A2698B2007E60C1 /* KJDMapKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2430351A2698B2007E60C1 /* KJDMapKitViewController.m */; };
+		0B42BD6F1A1FE80200FCEFE7 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		0B642B761A21A5DA00773D5F /* KJDChatRoomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B642B751A21A5DA00773D5F /* KJDChatRoomTableViewCell.m */; };
+		0BA1E8041A23F9AB0091DC3C /* KJDChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BA1E8031A23F9AB0091DC3C /* KJDChatRoomTableViewCell.xib */; };
+		0BAA8C601A243F1300B7E5AF /* magnifyingglass.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BAA8C5F1A243F1300B7E5AF /* magnifyingglass.png */; };
+		0BAA8C641A24403800B7E5AF /* chatIDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA8C631A24403800B7E5AF /* chatIDTextField.m */; };
+		0BAA8C661A2441FB00B7E5AF /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BAA8C651A2441FB00B7E5AF /* background.png */; };
+		0BB036CF1A1FE0EE0021CCF4 /* VegasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB036CE1A1FE0EE0021CCF4 /* VegasTests.m */; };
+		0BFE38091A1FE1C200EA4D28 /* KJDChatRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE38001A1FE1C200EA4D28 /* KJDChatRoom.m */; };
+		0BFE380A1A1FE1C200EA4D28 /* KJDChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE38021A1FE1C200EA4D28 /* KJDChatRoomViewController.m */; };
+		0BFE380B1A1FE1C200EA4D28 /* KJDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE38041A1FE1C200EA4D28 /* KJDUser.m */; };
+		0BFE38101A1FE1EB00EA4D28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE380F1A1FE1EB00EA4D28 /* AppDelegate.m */; };
+		8A45F5311A373ECC00A69E17 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A45F5301A373ECC00A69E17 /* images.xcassets */; };
+		8A45F5331A38020900A69E17 /* myLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A45F5321A38020900A69E17 /* myLaunchImage.png */; };
+		8A45F5351A3829DF00A69E17 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A45F5341A3829DF00A69E17 /* QuickLook.framework */; };
+		8A45F5381A382BAF00A69E17 /* KJDImageDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A45F5371A382BAF00A69E17 /* KJDImageDisplayViewController.m */; };
+		8A45F5411A389F6E00A69E17 /* KJDMediaCellLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A45F53F1A389F6E00A69E17 /* KJDMediaCellLeft.m */; };
+		8A45F5421A389F6E00A69E17 /* KJDMediaCellLeft.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A45F5401A389F6E00A69E17 /* KJDMediaCellLeft.xib */; };
+		8A45F5461A389FA400A69E17 /* KJDMediaCellRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A45F5441A389FA400A69E17 /* KJDMediaCellRight.m */; };
+		8A45F5471A389FA400A69E17 /* KJDMediaCellRight.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A45F5451A389FA400A69E17 /* KJDMediaCellRight.xib */; };
+		8A45F54B1A389FC500A69E17 /* KJDMessageCellRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A45F5491A389FC500A69E17 /* KJDMessageCellRight.m */; };
+		8A45F54C1A389FC500A69E17 /* KJDMessageCellRight.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A45F54A1A389FC500A69E17 /* KJDMessageCellRight.xib */; };
+		8A45F55B1A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A45F54F1A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.xib */; };
+		8A45F55C1A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A45F5511A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.m */; };
+		8A45F55D1A38B31500A69E17 /* KJDChatRoomTableViewCellRight.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A45F5521A38B31500A69E17 /* KJDChatRoomTableViewCellRight.xib */; };
+		8A45F55E1A38B31500A69E17 /* KJDChatRoomTableViewCellRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A45F5541A38B31500A69E17 /* KJDChatRoomTableViewCellRight.m */; };
+		8A45F55F1A38B31500A69E17 /* KJDChatRoomImageCellLeft.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A45F5551A38B31500A69E17 /* KJDChatRoomImageCellLeft.xib */; };
+		8A45F5601A38B31500A69E17 /* KJDChatRoomImageCellLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A45F5571A38B31500A69E17 /* KJDChatRoomImageCellLeft.m */; };
+		8A45F5611A38B31500A69E17 /* KJDChatRoomImageCellRight.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A45F5581A38B31500A69E17 /* KJDChatRoomImageCellRight.xib */; };
+		8A45F5621A38B31500A69E17 /* KJDChatRoomImageCellRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A45F55A1A38B31500A69E17 /* KJDChatRoomImageCellRight.m */; };
+		8AF7FF5A1A3BAE7800A9B4E4 /* vegasAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF7FF591A3BAE7800A9B4E4 /* vegasAppIcon.png */; };
+		8AF7FF5C1A3BB09800A9B4E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF7FF5B1A3BB09800A9B4E4 /* Default-568h@2x.png */; };
+		B19C3A341A1FE748002868B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B19C3A331A1FE748002868B1 /* main.m */; };
+		B19C3A371A1FE79E002868B1 /* KJDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19C3A361A1FE79E002868B1 /* KJDLoginViewController.m */; };
+		BD71407CCB2854C8BCF55FE3 /* libPods-Vegas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E89D24A220E31E9A949BD9 /* libPods-Vegas.a */; };
+		D4CC89AF1A40B7E500CCCC75 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC89AE1A40B7E500CCCC75 /* InterfaceController.m */; };
+		D4CC89B11A40B7E500CCCC75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CC89B01A40B7E500CCCC75 /* Images.xcassets */; };
+		D4CC89B51A40B7E500CCCC75 /* Vegas WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = D4CC89B41A40B7E500CCCC75 /* Vegas WatchKit App.app */; };
+		D4CC89BC1A40B7E500CCCC75 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CC89BB1A40B7E500CCCC75 /* Interface.storyboard */; };
+		D4CC89BE1A40B7E500CCCC75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CC89BD1A40B7E500CCCC75 /* Images.xcassets */; };
+		D4CC89C11A40B7E500CCCC75 /* Vegas WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D4CC89A91A40B7E500CCCC75 /* Vegas WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D4CC89CB1A40B9D300CCCC75 /* MainRowType.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CC89CA1A40B9D300CCCC75 /* MainRowType.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BB036C91A1FE0EE0021CCF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BB036A71A1FE0EE0021CCF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BB036AE1A1FE0EE0021CCF4;
+			remoteInfo = Vegas;
+		};
+		D4CC89B61A40B7E500CCCC75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BB036A71A1FE0EE0021CCF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4CC89B31A40B7E500CCCC75;
+			remoteInfo = "Vegas WatchKit App";
+		};
+		D4CC89BF1A40B7E500CCCC75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BB036A71A1FE0EE0021CCF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4CC89A81A40B7E500CCCC75;
+			remoteInfo = "Vegas WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4CC89C81A40B7E500CCCC75 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4CC89C11A40B7E500CCCC75 /* Vegas WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B24301B1A2696AC007E60C1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0B24301D1A2696B7007E60C1 /* libMobileGestalt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libMobileGestalt.dylib; path = usr/lib/libMobileGestalt.dylib; sourceTree = SDKROOT; };
+		0B24301E1A2696B7007E60C1 /* libMobileGestaltExtensions.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libMobileGestaltExtensions.dylib; path = usr/lib/libMobileGestaltExtensions.dylib; sourceTree = SDKROOT; };
+		0B2430211A26971B007E60C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0B2430221A26971B007E60C1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0B2430231A26971B007E60C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0B2430241A26971B007E60C1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0B2430251A26971B007E60C1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0B2430261A26971B007E60C1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0B2430271A26971B007E60C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0B2430281A26971B007E60C1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0B2430291A26971B007E60C1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0B24302A1A26971B007E60C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0B2430351A2698B2007E60C1 /* KJDMapKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDMapKitViewController.m; sourceTree = "<group>"; };
+		0B2430371A2698C6007E60C1 /* KJDMapKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJDMapKitViewController.h; sourceTree = "<group>"; };
+		0B642B741A21A5DA00773D5F /* KJDChatRoomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDChatRoomTableViewCell.h; sourceTree = "<group>"; };
+		0B642B751A21A5DA00773D5F /* KJDChatRoomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDChatRoomTableViewCell.m; sourceTree = "<group>"; };
+		0BA1E8031A23F9AB0091DC3C /* KJDChatRoomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJDChatRoomTableViewCell.xib; sourceTree = "<group>"; };
+		0BAA8C5F1A243F1300B7E5AF /* magnifyingglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnifyingglass.png; sourceTree = "<group>"; };
+		0BAA8C621A24403800B7E5AF /* chatIDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatIDTextField.h; sourceTree = "<group>"; };
+		0BAA8C631A24403800B7E5AF /* chatIDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatIDTextField.m; sourceTree = "<group>"; };
+		0BAA8C651A2441FB00B7E5AF /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		0BB036AF1A1FE0EE0021CCF4 /* Vegas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vegas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB036B31A1FE0EE0021CCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB036C81A1FE0EE0021CCF4 /* VegasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VegasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB036CD1A1FE0EE0021CCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB036CE1A1FE0EE0021CCF4 /* VegasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegasTests.m; sourceTree = "<group>"; };
+		0BFE37FF1A1FE1C200EA4D28 /* KJDChatRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDChatRoom.h; sourceTree = "<group>"; };
+		0BFE38001A1FE1C200EA4D28 /* KJDChatRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.c.objc; path = KJDChatRoom.m; sourceTree = "<group>"; };
+		0BFE38011A1FE1C200EA4D28 /* KJDChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDChatRoomViewController.h; sourceTree = "<group>"; };
+		0BFE38021A1FE1C200EA4D28 /* KJDChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDChatRoomViewController.m; sourceTree = "<group>"; };
+		0BFE38031A1FE1C200EA4D28 /* KJDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDUser.h; sourceTree = "<group>"; };
+		0BFE38041A1FE1C200EA4D28 /* KJDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDUser.m; sourceTree = "<group>"; };
+		0BFE380E1A1FE1EB00EA4D28 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0BFE380F1A1FE1EB00EA4D28 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41E89D24A220E31E9A949BD9 /* libPods-Vegas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vegas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCB63D569D4265F5E712AAA /* Pods-Vegas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas/Pods-Vegas.release.xcconfig"; sourceTree = "<group>"; };
+		8A45F5301A373ECC00A69E17 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		8A45F5321A38020900A69E17 /* myLaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myLaunchImage.png; sourceTree = "<group>"; };
+		8A45F5341A3829DF00A69E17 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		8A45F5361A382BAF00A69E17 /* KJDImageDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDImageDisplayViewController.h; sourceTree = "<group>"; };
+		8A45F5371A382BAF00A69E17 /* KJDImageDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDImageDisplayViewController.m; sourceTree = "<group>"; };
+		8A45F53E1A389F6E00A69E17 /* KJDMediaCellLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDMediaCellLeft.h; sourceTree = "<group>"; };
+		8A45F53F1A389F6E00A69E17 /* KJDMediaCellLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDMediaCellLeft.m; sourceTree = "<group>"; };
+		8A45F5401A389F6E00A69E17 /* KJDMediaCellLeft.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJDMediaCellLeft.xib; sourceTree = "<group>"; };
+		8A45F5431A389FA400A69E17 /* KJDMediaCellRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDMediaCellRight.h; sourceTree = "<group>"; };
+		8A45F5441A389FA400A69E17 /* KJDMediaCellRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDMediaCellRight.m; sourceTree = "<group>"; };
+		8A45F5451A389FA400A69E17 /* KJDMediaCellRight.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJDMediaCellRight.xib; sourceTree = "<group>"; };
+		8A45F5481A389FC500A69E17 /* KJDMessageCellRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDMessageCellRight.h; sourceTree = "<group>"; };
+		8A45F5491A389FC500A69E17 /* KJDMessageCellRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDMessageCellRight.m; sourceTree = "<group>"; };
+		8A45F54A1A389FC500A69E17 /* KJDMessageCellRight.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJDMessageCellRight.xib; sourceTree = "<group>"; };
+		8A45F54F1A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJDChatRoomTableViewCellLeft.xib; sourceTree = "<group>"; };
+		8A45F5501A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDChatRoomTableViewCellLeft.h; sourceTree = "<group>"; };
+		8A45F5511A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDChatRoomTableViewCellLeft.m; sourceTree = "<group>"; };
+		8A45F5521A38B31500A69E17 /* KJDChatRoomTableViewCellRight.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJDChatRoomTableViewCellRight.xib; sourceTree = "<group>"; };
+		8A45F5531A38B31500A69E17 /* KJDChatRoomTableViewCellRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDChatRoomTableViewCellRight.h; sourceTree = "<group>"; };
+		8A45F5541A38B31500A69E17 /* KJDChatRoomTableViewCellRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDChatRoomTableViewCellRight.m; sourceTree = "<group>"; };
+		8A45F5551A38B31500A69E17 /* KJDChatRoomImageCellLeft.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJDChatRoomImageCellLeft.xib; sourceTree = "<group>"; };
+		8A45F5561A38B31500A69E17 /* KJDChatRoomImageCellLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDChatRoomImageCellLeft.h; sourceTree = "<group>"; };
+		8A45F5571A38B31500A69E17 /* KJDChatRoomImageCellLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDChatRoomImageCellLeft.m; sourceTree = "<group>"; };
+		8A45F5581A38B31500A69E17 /* KJDChatRoomImageCellRight.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJDChatRoomImageCellRight.xib; sourceTree = "<group>"; };
+		8A45F5591A38B31500A69E17 /* KJDChatRoomImageCellRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDChatRoomImageCellRight.h; sourceTree = "<group>"; };
+		8A45F55A1A38B31500A69E17 /* KJDChatRoomImageCellRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDChatRoomImageCellRight.m; sourceTree = "<group>"; };
+		8AF7FF591A3BAE7800A9B4E4 /* vegasAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegasAppIcon.png; sourceTree = "<group>"; };
+		8AF7FF5B1A3BB09800A9B4E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B19C3A331A1FE748002868B1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B19C3A351A1FE79E002868B1 /* KJDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDLoginViewController.h; sourceTree = "<group>"; };
+		B19C3A361A1FE79E002868B1 /* KJDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDLoginViewController.m; sourceTree = "<group>"; };
+		CB5DAB915AC2BF4B352376B8 /* Pods-Vegas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas/Pods-Vegas.debug.xcconfig"; sourceTree = "<group>"; };
+		D4CC89A91A40B7E500CCCC75 /* Vegas WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Vegas WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CC89AC1A40B7E500CCCC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CC89AD1A40B7E500CCCC75 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		D4CC89AE1A40B7E500CCCC75 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		D4CC89B01A40B7E500CCCC75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4CC89B41A40B7E500CCCC75 /* Vegas WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vegas WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CC89BA1A40B7E500CCCC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CC89BB1A40B7E500CCCC75 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		D4CC89BD1A40B7E500CCCC75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4CC89C91A40B9D300CCCC75 /* MainRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRowType.h; sourceTree = "<group>"; };
+		D4CC89CA1A40B9D300CCCC75 /* MainRowType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRowType.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BB036AC1A1FE0EE0021CCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A45F5351A3829DF00A69E17 /* QuickLook.framework in Frameworks */,
+				0B24302B1A26971B007E60C1 /* AudioToolbox.framework in Frameworks */,
+				0B24302C1A26971B007E60C1 /* CFNetwork.framework in Frameworks */,
+				0B24302D1A26971B007E60C1 /* CoreGraphics.framework in Frameworks */,
+				0B24302E1A26971B007E60C1 /* CoreLocation.framework in Frameworks */,
+				0B24302F1A26971B007E60C1 /* libz.dylib in Frameworks */,
+				0B2430301A26971B007E60C1 /* MobileCoreServices.framework in Frameworks */,
+				0B2430311A26971B007E60C1 /* QuartzCore.framework in Frameworks */,
+				0B2430321A26971B007E60C1 /* Security.framework in Frameworks */,
+				0B2430331A26971B007E60C1 /* StoreKit.framework in Frameworks */,
+				0B2430341A26971B007E60C1 /* SystemConfiguration.framework in Frameworks */,
+				0B24301F1A2696B7007E60C1 /* libMobileGestalt.dylib in Frameworks */,
+				0B2430201A2696B7007E60C1 /* libMobileGestaltExtensions.dylib in Frameworks */,
+				0B24301C1A2696AC007E60C1 /* MediaPlayer.framework in Frameworks */,
+				BD71407CCB2854C8BCF55FE3 /* libPods-Vegas.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB036C51A1FE0EE0021CCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CC89A61A40B7E500CCCC75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BA1E8001A23F9850091DC3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B642B741A21A5DA00773D5F /* KJDChatRoomTableViewCell.h */,
+				0B642B751A21A5DA00773D5F /* KJDChatRoomTableViewCell.m */,
+				0BA1E8031A23F9AB0091DC3C /* KJDChatRoomTableViewCell.xib */,
+				8A45F54E1A38B2F700A69E17 /* JanCells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0BAA8C611A243F1800B7E5AF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8A45F5301A373ECC00A69E17 /* images.xcassets */,
+				8AF7FF591A3BAE7800A9B4E4 /* vegasAppIcon.png */,
+				0BAA8C651A2441FB00B7E5AF /* background.png */,
+				8AF7FF5B1A3BB09800A9B4E4 /* Default-568h@2x.png */,
+				0BAA8C5F1A243F1300B7E5AF /* magnifyingglass.png */,
+				8A45F5321A38020900A69E17 /* myLaunchImage.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0BB036A61A1FE0EE0021CCF4 = {
+			isa = PBXGroup;
+			children = (
+				0BB036B11A1FE0EE0021CCF4 /* Vegas */,
+				0BB036CB1A1FE0EE0021CCF4 /* VegasTests */,
+				D4CC89AA1A40B7E500CCCC75 /* Vegas WatchKit Extension */,
+				D4CC89B81A40B7E500CCCC75 /* Vegas WatchKit App */,
+				0BB036B01A1FE0EE0021CCF4 /* Products */,
+				3F27823C449794DFCEFFACF7 /* Pods */,
+				C7D98B8274A492CDF715EF39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0BB036B01A1FE0EE0021CCF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BB036AF1A1FE0EE0021CCF4 /* Vegas.app */,
+				0BB036C81A1FE0EE0021CCF4 /* VegasTests.xctest */,
+				D4CC89A91A40B7E500CCCC75 /* Vegas WatchKit Extension.appex */,
+				D4CC89B41A40B7E500CCCC75 /* Vegas WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BB036B11A1FE0EE0021CCF4 /* Vegas */ = {
+			isa = PBXGroup;
+			children = (
+				8A45F54D1A38B28100A69E17 /* myXibs */,
+				0BAA8C611A243F1800B7E5AF /* Images */,
+				0BA1E8001A23F9850091DC3C /* Views */,
+				B19C3A301A1FE6F9002868B1 /* View Controller */,
+				B19C3A2E1A1FE6C9002868B1 /* Model */,
+				0BB036B21A1FE0EE0021CCF4 /* Supporting Files */,
+				0BFE37FC1A1FE1C200EA4D28 /* Base.lproj */,
+			);
+			path = Vegas;
+			sourceTree = "<group>";
+		};
+		0BB036B21A1FE0EE0021CCF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE380E1A1FE1EB00EA4D28 /* AppDelegate.h */,
+				0BFE380F1A1FE1EB00EA4D28 /* AppDelegate.m */,
+				0BB036B31A1FE0EE0021CCF4 /* Info.plist */,
+				B19C3A331A1FE748002868B1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BB036CB1A1FE0EE0021CCF4 /* VegasTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BB036CE1A1FE0EE0021CCF4 /* VegasTests.m */,
+				0BB036CC1A1FE0EE0021CCF4 /* Supporting Files */,
+			);
+			path = VegasTests;
+			sourceTree = "<group>";
+		};
+		0BB036CC1A1FE0EE0021CCF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BB036CD1A1FE0EE0021CCF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BFE37FC1A1FE1C200EA4D28 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		3F27823C449794DFCEFFACF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB5DAB915AC2BF4B352376B8 /* Pods-Vegas.debug.xcconfig */,
+				5DCB63D569D4265F5E712AAA /* Pods-Vegas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A45F54D1A38B28100A69E17 /* myXibs */ = {
+			isa = PBXGroup;
+			children = (
+				8A45F5431A389FA400A69E17 /* KJDMediaCellRight.h */,
+				8A45F5441A389FA400A69E17 /* KJDMediaCellRight.m */,
+				8A45F5451A389FA400A69E17 /* KJDMediaCellRight.xib */,
+				8A45F53E1A389F6E00A69E17 /* KJDMediaCellLeft.h */,
+				8A45F53F1A389F6E00A69E17 /* KJDMediaCellLeft.m */,
+				8A45F5401A389F6E00A69E17 /* KJDMediaCellLeft.xib */,
+				8A45F5481A389FC500A69E17 /* KJDMessageCellRight.h */,
+				8A45F5491A389FC500A69E17 /* KJDMessageCellRight.m */,
+				8A45F54A1A389FC500A69E17 /* KJDMessageCellRight.xib */,
+			);
+			name = myXibs;
+			sourceTree = "<group>";
+		};
+		8A45F54E1A38B2F700A69E17 /* JanCells */ = {
+			isa = PBXGroup;
+			children = (
+				8A45F54F1A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.xib */,
+				8A45F5501A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.h */,
+				8A45F5511A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.m */,
+				8A45F5521A38B31500A69E17 /* KJDChatRoomTableViewCellRight.xib */,
+				8A45F5531A38B31500A69E17 /* KJDChatRoomTableViewCellRight.h */,
+				8A45F5541A38B31500A69E17 /* KJDChatRoomTableViewCellRight.m */,
+				8A45F5551A38B31500A69E17 /* KJDChatRoomImageCellLeft.xib */,
+				8A45F5561A38B31500A69E17 /* KJDChatRoomImageCellLeft.h */,
+				8A45F5571A38B31500A69E17 /* KJDChatRoomImageCellLeft.m */,
+				8A45F5581A38B31500A69E17 /* KJDChatRoomImageCellRight.xib */,
+				8A45F5591A38B31500A69E17 /* KJDChatRoomImageCellRight.h */,
+				8A45F55A1A38B31500A69E17 /* KJDChatRoomImageCellRight.m */,
+			);
+			name = JanCells;
+			sourceTree = "<group>";
+		};
+		B19C3A2E1A1FE6C9002868B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BFE38031A1FE1C200EA4D28 /* KJDUser.h */,
+				0BFE38041A1FE1C200EA4D28 /* KJDUser.m */,
+				0BFE37FF1A1FE1C200EA4D28 /* KJDChatRoom.h */,
+				0BFE38001A1FE1C200EA4D28 /* KJDChatRoom.m */,
+				0BAA8C621A24403800B7E5AF /* chatIDTextField.h */,
+				0BAA8C631A24403800B7E5AF /* chatIDTextField.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B19C3A301A1FE6F9002868B1 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B2430371A2698C6007E60C1 /* KJDMapKitViewController.h */,
+				0B2430351A2698B2007E60C1 /* KJDMapKitViewController.m */,
+				8A45F5361A382BAF00A69E17 /* KJDImageDisplayViewController.h */,
+				8A45F5371A382BAF00A69E17 /* KJDImageDisplayViewController.m */,
+				0BFE38011A1FE1C200EA4D28 /* KJDChatRoomViewController.h */,
+				0BFE38021A1FE1C200EA4D28 /* KJDChatRoomViewController.m */,
+				B19C3A351A1FE79E002868B1 /* KJDLoginViewController.h */,
+				B19C3A361A1FE79E002868B1 /* KJDLoginViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		C7D98B8274A492CDF715EF39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A45F5341A3829DF00A69E17 /* QuickLook.framework */,
+				0B2430211A26971B007E60C1 /* AudioToolbox.framework */,
+				0B2430221A26971B007E60C1 /* CFNetwork.framework */,
+				0B2430231A26971B007E60C1 /* CoreGraphics.framework */,
+				0B2430241A26971B007E60C1 /* CoreLocation.framework */,
+				0B2430251A26971B007E60C1 /* libz.dylib */,
+				0B2430261A26971B007E60C1 /* MobileCoreServices.framework */,
+				0B2430271A26971B007E60C1 /* QuartzCore.framework */,
+				0B2430281A26971B007E60C1 /* Security.framework */,
+				0B2430291A26971B007E60C1 /* StoreKit.framework */,
+				0B24302A1A26971B007E60C1 /* SystemConfiguration.framework */,
+				0B24301D1A2696B7007E60C1 /* libMobileGestalt.dylib */,
+				0B24301E1A2696B7007E60C1 /* libMobileGestaltExtensions.dylib */,
+				0B24301B1A2696AC007E60C1 /* MediaPlayer.framework */,
+				41E89D24A220E31E9A949BD9 /* libPods-Vegas.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4CC89AA1A40B7E500CCCC75 /* Vegas WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC89AD1A40B7E500CCCC75 /* InterfaceController.h */,
+				D4CC89AE1A40B7E500CCCC75 /* InterfaceController.m */,
+				D4CC89B01A40B7E500CCCC75 /* Images.xcassets */,
+				D4CC89AB1A40B7E500CCCC75 /* Supporting Files */,
+				D4CC89C91A40B9D300CCCC75 /* MainRowType.h */,
+				D4CC89CA1A40B9D300CCCC75 /* MainRowType.m */,
+			);
+			path = "Vegas WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D4CC89AB1A40B7E500CCCC75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC89AC1A40B7E500CCCC75 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4CC89B81A40B7E500CCCC75 /* Vegas WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC89BB1A40B7E500CCCC75 /* Interface.storyboard */,
+				D4CC89BD1A40B7E500CCCC75 /* Images.xcassets */,
+				D4CC89B91A40B7E500CCCC75 /* Supporting Files */,
+			);
+			path = "Vegas WatchKit App";
+			sourceTree = "<group>";
+		};
+		D4CC89B91A40B7E500CCCC75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4CC89BA1A40B7E500CCCC75 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BB036AE1A1FE0EE0021CCF4 /* Vegas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB036D21A1FE0EE0021CCF4 /* Build configuration list for PBXNativeTarget "Vegas" */;
+			buildPhases = (
+				E0D7D3CDA323DE87F0326CE5 /* Check Pods Manifest.lock */,
+				0BB036AB1A1FE0EE0021CCF4 /* Sources */,
+				0BB036AC1A1FE0EE0021CCF4 /* Frameworks */,
+				0BB036AD1A1FE0EE0021CCF4 /* Resources */,
+				70653407E937DEDE0ABD9369 /* Copy Pods Resources */,
+				D4CC89C81A40B7E500CCCC75 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4CC89C01A40B7E500CCCC75 /* PBXTargetDependency */,
+			);
+			name = Vegas;
+			productName = Vegas;
+			productReference = 0BB036AF1A1FE0EE0021CCF4 /* Vegas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BB036C71A1FE0EE0021CCF4 /* VegasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB036D51A1FE0EE0021CCF4 /* Build configuration list for PBXNativeTarget "VegasTests" */;
+			buildPhases = (
+				0BB036C41A1FE0EE0021CCF4 /* Sources */,
+				0BB036C51A1FE0EE0021CCF4 /* Frameworks */,
+				0BB036C61A1FE0EE0021CCF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB036CA1A1FE0EE0021CCF4 /* PBXTargetDependency */,
+			);
+			name = VegasTests;
+			productName = VegasTests;
+			productReference = 0BB036C81A1FE0EE0021CCF4 /* VegasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4CC89A81A40B7E500CCCC75 /* Vegas WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CC89C71A40B7E500CCCC75 /* Build configuration list for PBXNativeTarget "Vegas WatchKit Extension" */;
+			buildPhases = (
+				D4CC89A51A40B7E500CCCC75 /* Sources */,
+				D4CC89A61A40B7E500CCCC75 /* Frameworks */,
+				D4CC89A71A40B7E500CCCC75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4CC89B71A40B7E500CCCC75 /* PBXTargetDependency */,
+			);
+			name = "Vegas WatchKit Extension";
+			productName = "Vegas WatchKit Extension";
+			productReference = D4CC89A91A40B7E500CCCC75 /* Vegas WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		D4CC89B31A40B7E500CCCC75 /* Vegas WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CC89C61A40B7E500CCCC75 /* Build configuration list for PBXNativeTarget "Vegas WatchKit App" */;
+			buildPhases = (
+				D4CC89B21A40B7E500CCCC75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vegas WatchKit App";
+			productName = "Vegas WatchKit App";
+			productReference = D4CC89B41A40B7E500CCCC75 /* Vegas WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BB036A71A1FE0EE0021CCF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Jan Roures Mintenig";
+				TargetAttributes = {
+					0BB036AE1A1FE0EE0021CCF4 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					0BB036C71A1FE0EE0021CCF4 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 0BB036AE1A1FE0EE0021CCF4;
+					};
+					D4CC89A81A40B7E500CCCC75 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					D4CC89B31A40B7E500CCCC75 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 0BB036AA1A1FE0EE0021CCF4 /* Build configuration list for PBXProject "Vegas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BB036A61A1FE0EE0021CCF4;
+			productRefGroup = 0BB036B01A1FE0EE0021CCF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BB036AE1A1FE0EE0021CCF4 /* Vegas */,
+				0BB036C71A1FE0EE0021CCF4 /* VegasTests */,
+				D4CC89A81A40B7E500CCCC75 /* Vegas WatchKit Extension */,
+				D4CC89B31A40B7E500CCCC75 /* Vegas WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BB036AD1A1FE0EE0021CCF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF7FF5C1A3BB09800A9B4E4 /* Default-568h@2x.png in Resources */,
+				8A45F55B1A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.xib in Resources */,
+				8A45F5331A38020900A69E17 /* myLaunchImage.png in Resources */,
+				0BA1E8041A23F9AB0091DC3C /* KJDChatRoomTableViewCell.xib in Resources */,
+				8A45F5311A373ECC00A69E17 /* images.xcassets in Resources */,
+				8A45F5421A389F6E00A69E17 /* KJDMediaCellLeft.xib in Resources */,
+				8A45F55D1A38B31500A69E17 /* KJDChatRoomTableViewCellRight.xib in Resources */,
+				8A45F55F1A38B31500A69E17 /* KJDChatRoomImageCellLeft.xib in Resources */,
+				8A45F54C1A389FC500A69E17 /* KJDMessageCellRight.xib in Resources */,
+				8A45F5471A389FA400A69E17 /* KJDMediaCellRight.xib in Resources */,
+				8A45F5611A38B31500A69E17 /* KJDChatRoomImageCellRight.xib in Resources */,
+				0BAA8C661A2441FB00B7E5AF /* background.png in Resources */,
+				0BAA8C601A243F1300B7E5AF /* magnifyingglass.png in Resources */,
+				8AF7FF5A1A3BAE7800A9B4E4 /* vegasAppIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB036C61A1FE0EE0021CCF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CC89A71A40B7E500CCCC75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CC89B11A40B7E500CCCC75 /* Images.xcassets in Resources */,
+				D4CC89B51A40B7E500CCCC75 /* Vegas WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CC89B21A40B7E500CCCC75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CC89BC1A40B7E500CCCC75 /* Interface.storyboard in Resources */,
+				D4CC89BE1A40B7E500CCCC75 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70653407E937DEDE0ABD9369 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vegas/Pods-Vegas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D7D3CDA323DE87F0326CE5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BB036AB1A1FE0EE0021CCF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BAA8C641A24403800B7E5AF /* chatIDTextField.m in Sources */,
+				8A45F55E1A38B31500A69E17 /* KJDChatRoomTableViewCellRight.m in Sources */,
+				0B42BD6F1A1FE80200FCEFE7 /* (null) in Sources */,
+				8A45F5621A38B31500A69E17 /* KJDChatRoomImageCellRight.m in Sources */,
+				0BFE380B1A1FE1C200EA4D28 /* KJDUser.m in Sources */,
+				0BFE38101A1FE1EB00EA4D28 /* AppDelegate.m in Sources */,
+				0B2430361A2698B2007E60C1 /* KJDMapKitViewController.m in Sources */,
+				8A45F5411A389F6E00A69E17 /* KJDMediaCellLeft.m in Sources */,
+				0BFE38091A1FE1C200EA4D28 /* KJDChatRoom.m in Sources */,
+				8A45F5381A382BAF00A69E17 /* KJDImageDisplayViewController.m in Sources */,
+				8A45F54B1A389FC500A69E17 /* KJDMessageCellRight.m in Sources */,
+				B19C3A341A1FE748002868B1 /* main.m in Sources */,
+				8A45F5601A38B31500A69E17 /* KJDChatRoomImageCellLeft.m in Sources */,
+				B19C3A371A1FE79E002868B1 /* KJDLoginViewController.m in Sources */,
+				8A45F5461A389FA400A69E17 /* KJDMediaCellRight.m in Sources */,
+				0B642B761A21A5DA00773D5F /* KJDChatRoomTableViewCell.m in Sources */,
+				8A45F55C1A38B31500A69E17 /* KJDChatRoomTableViewCellLeft.m in Sources */,
+				0BFE380A1A1FE1C200EA4D28 /* KJDChatRoomViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB036C41A1FE0EE0021CCF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB036CF1A1FE0EE0021CCF4 /* VegasTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CC89A51A40B7E500CCCC75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CC89AF1A40B7E500CCCC75 /* InterfaceController.m in Sources */,
+				D4CC89CB1A40B9D300CCCC75 /* MainRowType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BB036CA1A1FE0EE0021CCF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BB036AE1A1FE0EE0021CCF4 /* Vegas */;
+			targetProxy = 0BB036C91A1FE0EE0021CCF4 /* PBXContainerItemProxy */;
+		};
+		D4CC89B71A40B7E500CCCC75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4CC89B31A40B7E500CCCC75 /* Vegas WatchKit App */;
+			targetProxy = D4CC89B61A40B7E500CCCC75 /* PBXContainerItemProxy */;
+		};
+		D4CC89C01A40B7E500CCCC75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4CC89A81A40B7E500CCCC75 /* Vegas WatchKit Extension */;
+			targetProxy = D4CC89BF1A40B7E500CCCC75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BB036D01A1FE0EE0021CCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0BB036D11A1FE0EE0021CCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BB036D31A1FE0EE0021CCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5DAB915AC2BF4B352376B8 /* Pods-Vegas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vegas",
+				);
+				INFOPLIST_FILE = Vegas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0BB036D41A1FE0EE0021CCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DCB63D569D4265F5E712AAA /* Pods-Vegas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vegas",
+				);
+				INFOPLIST_FILE = Vegas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0BB036D61A1FE0EE0021CCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VegasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vegas.app/Vegas";
+			};
+			name = Debug;
+		};
+		0BB036D71A1FE0EE0021CCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VegasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vegas.app/Vegas";
+			};
+			name = Release;
+		};
+		D4CC89C21A40B7E500CCCC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Vegas WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D4CC89C31A40B7E500CCCC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Vegas WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D4CC89C41A40B7E500CCCC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Vegas_WatchKit_Extension;
+				INFOPLIST_FILE = "Vegas WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		D4CC89C51A40B7E500CCCC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = Vegas_WatchKit_Extension;
+				INFOPLIST_FILE = "Vegas WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BB036AA1A1FE0EE0021CCF4 /* Build configuration list for PBXProject "Vegas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB036D01A1FE0EE0021CCF4 /* Debug */,
+				0BB036D11A1FE0EE0021CCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BB036D21A1FE0EE0021CCF4 /* Build configuration list for PBXNativeTarget "Vegas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB036D31A1FE0EE0021CCF4 /* Debug */,
+				0BB036D41A1FE0EE0021CCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BB036D51A1FE0EE0021CCF4 /* Build configuration list for PBXNativeTarget "VegasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB036D61A1FE0EE0021CCF4 /* Debug */,
+				0BB036D71A1FE0EE0021CCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CC89C61A40B7E500CCCC75 /* Build configuration list for PBXNativeTarget "Vegas WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CC89C41A40B7E500CCCC75 /* Debug */,
+				D4CC89C51A40B7E500CCCC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CC89C71A40B7E500CCCC75 /* Build configuration list for PBXNativeTarget "Vegas WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CC89C21A40B7E500CCCC75 /* Debug */,
+				D4CC89C31A40B7E500CCCC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BB036A71A1FE0EE0021CCF4 /* Project object */;
+}
