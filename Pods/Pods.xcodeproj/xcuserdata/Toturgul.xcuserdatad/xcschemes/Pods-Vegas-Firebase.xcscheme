@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "892A9674592E790CF7881433"
+               BlueprintIdentifier = "286F4C50A67E548BA194AC09"
                BuildableName = "libPods-Vegas-Firebase.a"
                BlueprintName = "Pods-Vegas-Firebase"
                ReferencedContainer = "container:Pods.xcodeproj">
