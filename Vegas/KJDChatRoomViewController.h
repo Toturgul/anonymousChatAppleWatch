@@ -5,7 +5,6 @@
 #import <UIKit/UIKit.h>
 #import "KJDUser.h"
 #import "KJDChatRoom.h"
-#import "KJDChatRoomTableViewCell.h"
 #import <QuartzCore/QuartzCore.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <MediaPlayer/MediaPlayer.h>
